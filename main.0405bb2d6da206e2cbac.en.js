@@ -11390,7 +11390,7 @@
                 Zd = so({
                     encapsulation: 0,
                     styles: [
-                        ["[_nghost-%COMP%]{display:block;overflow:hidden;border-radius:3px;background-color:#fff;cursor:pointer}.title[_ngcontent-%COMP%]{margin:0;font-weight:400;font-size:1.2rem}.title[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{display:block;padding:1.25rem;color:inherit}.thumbnail[_ngcontent-%COMP%]{display:block;border-top:1px solid #f5f7fa}.excerpt[_ngcontent-%COMP%]{padding:.5rem 1.25rem;border-top:1px solid #f5f7fa}footer[_ngcontent-%COMP%]{border-top:1px solid #f5f7fa;color:#97a9c5}footer[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-block;padding:1.25rem}footer[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{margin-right:.5rem;color:#ccd6e4}"]
+                        ["[_nghost-%COMP%]{display:block;overflow:hidden;border-radius:3px;cursor:pointer}.title[_ngcontent-%COMP%]{margin:0;font-weight:400;font-size:1.2rem}.title[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]{display:block;padding:1.25rem;color:inherit}.thumbnail[_ngcontent-%COMP%]{display:block;border-top:1px solid #f5f7fa}.excerpt[_ngcontent-%COMP%]{padding:.5rem 1.25rem;border-top:1px solid #f5f7fa}footer[_ngcontent-%COMP%]{border-top:1px solid #f5f7fa;color:#97a9c5;background-color: rgba(255,255,255,0.7);}footer[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{display:inline-block;padding:1.25rem}footer[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{margin-right:.5rem;color:#ccd6e4}"]
                     ],
                     data: {}
                 });
