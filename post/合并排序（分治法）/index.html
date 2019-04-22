@@ -2,25 +2,25 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 <meta charset="utf-8">
-<title>c++中map用法 - 李鑫的blog</title>
+<title>合并排序（分治法） - 李鑫的blog</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://starlx.cn/post/c-中map用法/">
+<link rel="canonical" href="http://starlx.cn/post/合并排序（分治法）/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
-<meta name="description" content="1、map简介map是一类关联式容器。它的特点是增加和删除节点对迭代器的影响很小，除了那个操作节点，对其他的节点都没有什么影响。对于迭代器来说，可以修改实值，而不能修改key。  2、map的功能自动建立Key － value的对应。key 和 value可以是任意你需要的类型。根据key值快速查找记录，查找的复杂度基本是Log(N)，如果有1000个记录，最多查找10次，1,000,000个记录">
+<meta name="description" content="简介归并排序（MERGE-SORT）是利用归并的思想实现的排序方法，该算法采用经典的分治（divide-and-conquer）策略（分治法将问题分(divide)成一些小的问题然后递归求解，而治(conquer)的阶段则将分的阶段得到的各答案”修补”在一起，即分而治之)。 1、分对集合不断进行拆分，直至集合中只剩一个元素为止。12345678910void Mergesort(int left,">
 <meta property="og:type" content="website">
-<meta property="og:title" content="c++中map用法">
-<meta property="og:url" content="http://starlx.cn/post/c-中map用法/index.html">
+<meta property="og:title" content="合并排序（分治法）">
+<meta property="og:url" content="http://starlx.cn/post/合并排序（分治法）/index.html">
 <meta property="og:site_name" content="李鑫的blog">
-<meta property="og:description" content="1、map简介map是一类关联式容器。它的特点是增加和删除节点对迭代器的影响很小，除了那个操作节点，对其他的节点都没有什么影响。对于迭代器来说，可以修改实值，而不能修改key。  2、map的功能自动建立Key － value的对应。key 和 value可以是任意你需要的类型。根据key值快速查找记录，查找的复杂度基本是Log(N)，如果有1000个记录，最多查找10次，1,000,000个记录">
+<meta property="og:description" content="简介归并排序（MERGE-SORT）是利用归并的思想实现的排序方法，该算法采用经典的分治（divide-and-conquer）策略（分治法将问题分(divide)成一些小的问题然后递归求解，而治(conquer)的阶段则将分的阶段得到的各答案”修补”在一起，即分而治之)。 1、分对集合不断进行拆分，直至集合中只剩一个元素为止。12345678910void Mergesort(int left,">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://starlx.cn/images/star.jpg">
-<meta property="og:updated_time" content="2018-11-21T05:39:46.565Z">
+<meta property="og:updated_time" content="2019-04-22T07:05:43.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="c++中map用法">
-<meta name="twitter:description" content="1、map简介map是一类关联式容器。它的特点是增加和删除节点对迭代器的影响很小，除了那个操作节点，对其他的节点都没有什么影响。对于迭代器来说，可以修改实值，而不能修改key。  2、map的功能自动建立Key － value的对应。key 和 value可以是任意你需要的类型。根据key值快速查找记录，查找的复杂度基本是Log(N)，如果有1000个记录，最多查找10次，1,000,000个记录">
+<meta name="twitter:title" content="合并排序（分治法）">
+<meta name="twitter:description" content="简介归并排序（MERGE-SORT）是利用归并的思想实现的排序方法，该算法采用经典的分治（divide-and-conquer）策略（分治法将问题分(divide)成一些小的问题然后递归求解，而治(conquer)的阶段则将分的阶段得到的各答案”修补”在一起，即分而治之)。 1、分对集合不断进行拆分，直至集合中只剩一个元素为止。12345678910void Mergesort(int left,">
 <meta name="twitter:image" content="http://starlx.cn/images/star.jpg">
 
 <link rel="stylesheet" href="/fonts.e15b7f98c5fa14803416.css">
