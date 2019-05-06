@@ -2,25 +2,25 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 <meta charset="utf-8">
-<title>最近点对问题 - 李鑫的blog</title>
+<title>快速排序 - 李鑫的blog</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://starlx.cn/post/最近点对问题/">
+<link rel="canonical" href="http://starlx.cn/post/快速排序/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
-<meta name="description" content="分治算法求最近点对题目:1给定的二维平面上有n个点，找其中的一对点，使得在n个点的所有点对中，该点对的距离最小； 算法：1234567891.将平面上的点集S按x坐标排序后，若只有1个点，则返回；若有两个点，则直接计算两点距离为最近距离；若有三个点，则两两计算出距离，得到最近距离。2.若大于三个点，则将其线性分割成大小大致相等的2个子集S1，S2。3.最近点对只会出现在以下三种情况中：①点对在子集">
+<meta name="description" content="1.概述快速排序，听这个名字就能想到它排序速度比较快方法，是一种分治思想，现在各种语言中自带的排序库很多使用的都是快速排序。 空间复杂度快速排序是一种原地排序，只需要一个很小的栈作为辅助空间，空间复杂度为O(log2n)，所以适合在数据集比较大的时候使用。 时间复杂度时间复杂度比较复杂，最好的情况是O(n)，最差的情况是O(n2)，所以平时说的O(nlogn)，为其平均时间复杂度。 2.基本思想">
 <meta property="og:type" content="website">
-<meta property="og:title" content="最近点对问题">
-<meta property="og:url" content="http://starlx.cn/post/最近点对问题/index.html">
+<meta property="og:title" content="快速排序">
+<meta property="og:url" content="http://starlx.cn/post/快速排序/index.html">
 <meta property="og:site_name" content="李鑫的blog">
-<meta property="og:description" content="分治算法求最近点对题目:1给定的二维平面上有n个点，找其中的一对点，使得在n个点的所有点对中，该点对的距离最小； 算法：1234567891.将平面上的点集S按x坐标排序后，若只有1个点，则返回；若有两个点，则直接计算两点距离为最近距离；若有三个点，则两两计算出距离，得到最近距离。2.若大于三个点，则将其线性分割成大小大致相等的2个子集S1，S2。3.最近点对只会出现在以下三种情况中：①点对在子集">
+<meta property="og:description" content="1.概述快速排序，听这个名字就能想到它排序速度比较快方法，是一种分治思想，现在各种语言中自带的排序库很多使用的都是快速排序。 空间复杂度快速排序是一种原地排序，只需要一个很小的栈作为辅助空间，空间复杂度为O(log2n)，所以适合在数据集比较大的时候使用。 时间复杂度时间复杂度比较复杂，最好的情况是O(n)，最差的情况是O(n2)，所以平时说的O(nlogn)，为其平均时间复杂度。 2.基本思想">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://starlx.cn/images/star.jpg">
-<meta property="og:updated_time" content="2019-04-22T10:42:56.466Z">
+<meta property="og:updated_time" content="2019-05-06T07:15:23.907Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="最近点对问题">
-<meta name="twitter:description" content="分治算法求最近点对题目:1给定的二维平面上有n个点，找其中的一对点，使得在n个点的所有点对中，该点对的距离最小； 算法：1234567891.将平面上的点集S按x坐标排序后，若只有1个点，则返回；若有两个点，则直接计算两点距离为最近距离；若有三个点，则两两计算出距离，得到最近距离。2.若大于三个点，则将其线性分割成大小大致相等的2个子集S1，S2。3.最近点对只会出现在以下三种情况中：①点对在子集">
+<meta name="twitter:title" content="快速排序">
+<meta name="twitter:description" content="1.概述快速排序，听这个名字就能想到它排序速度比较快方法，是一种分治思想，现在各种语言中自带的排序库很多使用的都是快速排序。 空间复杂度快速排序是一种原地排序，只需要一个很小的栈作为辅助空间，空间复杂度为O(log2n)，所以适合在数据集比较大的时候使用。 时间复杂度时间复杂度比较复杂，最好的情况是O(n)，最差的情况是O(n2)，所以平时说的O(nlogn)，为其平均时间复杂度。 2.基本思想">
 <meta name="twitter:image" content="http://starlx.cn/images/star.jpg">
 
 <link rel="stylesheet" href="/fonts.e15b7f98c5fa14803416.css">
