@@ -2,25 +2,25 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
 <meta charset="utf-8">
-<title>凸包面积——Graham扫描法 - 李鑫的blog</title>
+<title>python学习-元祖 - 李鑫的blog</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="http://starlx.cn/post/凸包面积——Graham扫描法/">
+<link rel="canonical" href="http://starlx.cn/post/python学习-元祖/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
-<meta name="description" content="凸包面积–Graham扫描法1.选取p0作为y坐标最小的点，如果y坐标相等，选取x坐标最小的点（即最左下的点）1234567891011int n,k=0;cin&amp;gt;&amp;gt;n;for(int i=0;i&amp;lt;n;i++)&amp;#123;    cin&amp;gt;&amp;gt;p[i].x&amp;gt;&amp;gt;p[i].y;    if(p[i].y&amp;lt;p[k].y||(p[i].y==p[k].y&amp;amp">
+<meta name="description" content="Python的元组与列表类似，不同之处在于元组的元素不能修改,元组使用小括号,列表使用方括号,元组创建很简单,只需要在括号中添加元素,并使用逗号隔开即可 一、创建元组123tup1 = (&amp;apos;physics&amp;apos;, &amp;apos;chemistry&amp;apos;, 1997, 2000);tup2 = (1, 2, 3, 4, 5 );tup3 = &amp;quot;a&amp;quot;, &amp;quo">
 <meta property="og:type" content="website">
-<meta property="og:title" content="凸包面积——Graham扫描法">
-<meta property="og:url" content="http://starlx.cn/post/凸包面积——Graham扫描法/index.html">
+<meta property="og:title" content="python学习-元祖">
+<meta property="og:url" content="http://starlx.cn/post/python学习-元祖/index.html">
 <meta property="og:site_name" content="李鑫的blog">
-<meta property="og:description" content="凸包面积–Graham扫描法1.选取p0作为y坐标最小的点，如果y坐标相等，选取x坐标最小的点（即最左下的点）1234567891011int n,k=0;cin&amp;gt;&amp;gt;n;for(int i=0;i&amp;lt;n;i++)&amp;#123;    cin&amp;gt;&amp;gt;p[i].x&amp;gt;&amp;gt;p[i].y;    if(p[i].y&amp;lt;p[k].y||(p[i].y==p[k].y&amp;amp">
+<meta property="og:description" content="Python的元组与列表类似，不同之处在于元组的元素不能修改,元组使用小括号,列表使用方括号,元组创建很简单,只需要在括号中添加元素,并使用逗号隔开即可 一、创建元组123tup1 = (&amp;apos;physics&amp;apos;, &amp;apos;chemistry&amp;apos;, 1997, 2000);tup2 = (1, 2, 3, 4, 5 );tup3 = &amp;quot;a&amp;quot;, &amp;quo">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://starlx.cn/images/star.jpg">
-<meta property="og:updated_time" content="2019-05-17T01:41:38.504Z">
+<meta property="og:updated_time" content="2019-07-16T03:02:06.732Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="凸包面积——Graham扫描法">
-<meta name="twitter:description" content="凸包面积–Graham扫描法1.选取p0作为y坐标最小的点，如果y坐标相等，选取x坐标最小的点（即最左下的点）1234567891011int n,k=0;cin&amp;gt;&amp;gt;n;for(int i=0;i&amp;lt;n;i++)&amp;#123;    cin&amp;gt;&amp;gt;p[i].x&amp;gt;&amp;gt;p[i].y;    if(p[i].y&amp;lt;p[k].y||(p[i].y==p[k].y&amp;amp">
+<meta name="twitter:title" content="python学习-元祖">
+<meta name="twitter:description" content="Python的元组与列表类似，不同之处在于元组的元素不能修改,元组使用小括号,列表使用方括号,元组创建很简单,只需要在括号中添加元素,并使用逗号隔开即可 一、创建元组123tup1 = (&amp;apos;physics&amp;apos;, &amp;apos;chemistry&amp;apos;, 1997, 2000);tup2 = (1, 2, 3, 4, 5 );tup3 = &amp;quot;a&amp;quot;, &amp;quo">
 <meta name="twitter:image" content="http://starlx.cn/images/star.jpg">
 
 <link rel="stylesheet" href="/fonts.e15b7f98c5fa14803416.css">
